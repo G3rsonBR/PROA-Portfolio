@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Portfolio de Gerson Silva" />
+    <meta
+      name="description"
+      content="Um website com intuito de comprovar conhecimentos técnicos e criar portfolio"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">Gerson Silva</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#techs">Tecnologias</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contatos</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Gerson Silva</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#techs" onclick="toggleMenu()">Tecnologias</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contatos</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/me.png" alt="Gerson Silva Photo" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, me chamo</p>
+        <h1 class="title">Gerson Silva</h1>
+        <p class="section__text__p2">Desenvolvedor FrontEnd</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/cv.pdf')"
+          >
+            Baixar CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contatar
+          </button>
+        </div>
+        <div class="socials-container">
+          <span
+            ><i
+              class="ri-linkedin-box-fill"
+              onclick="window.open('https://www.linkedin.com/in/br-gerson/', '_blank')"
+            ></i
+          ></span>
+          <span>
+            <i
+              class="ri-github-fill"
+              onclick="window.open('https://github.com/G3rsonBR', '_blank')"
+            ></i>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Veja Agora Mais</p>
+      <h2 class="title">Sobre Mim</h2>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/meAbot.jpg"
+            alt="Foto de Perfil"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <span><i class="ri-award-line"></i></span>
+              <h3>Experiência</h3>
+              <p>
+                +2 Anos de Experiência<br />Desenvolvedor Frontend
+                (Freelancer)<br />
+              </p>
+            </div>
+            <div class="details-container">
+              <span><i class="ri-team-line"></i></span>
+              <h3>Escolaridade</h3>
+              <p>
+                Técnico em Informática para Internet<br />Etec Antônio Furlan
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Desenvolvedor Web apaixonado por tecnologias e novos aprendizados.
+              Sempre buscando novos conhecimentos na área de programação,
+              atualmente me especializando na área e buscando uma primeira
+              oportunidade de emprego.
+            </p>
+          </div>
+        </div>
+      </div>
+      <span>
+        <i
+          class="arrow icon ri-arrow-down-double-line"
+          onclick="location.href='#techs'"
+        ></i>
+      </span>
+    </section>
+
+    <section id="techs">
+      <p class="section__text__p1">Veja minhas</p>
+      <h2 class="title">Hard Skills</h2>
+      <div class="experience-details-container">
+        <div class="about-containers techs-container">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Desenvolvimento Frontend</h2>
+            <div class="article-container">
+              <article>
+                <span><i class="icon ri-checkbox-circle-line"></i></span>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experiente</p>
+                </div>
+              </article>
+              <article>
+                <span><i class="icon ri-checkbox-circle-line"></i></span>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experiente</p>
+                </div>
+              </article>
+              <article>
+                <span><i class="icon ri-checkbox-circle-line"></i></span>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experiente</p>
+                </div>
+              </article>
+              <article>
+                <span><i class="icon ri-checkbox-circle-line"></i></span>
+                <div>
+                  <h3>ReactJS</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <span><i class="icon ri-checkbox-circle-line"></i></span>
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <span><i class="icon ri-checkbox-circle-line"></i></span>
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Desenvolvimento Backend</h2>
+            <div class="article-container">
+              <article>
+                <span><i class="icon ri-checkbox-circle-line"></i></span>
+                <div>
+                  <h3>NodeJS</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <span><i class="icon ri-checkbox-circle-line"></i></span>
+                <div>
+                  <h3>PostgreeSQL</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <span><i class="icon ri-checkbox-circle-line"></i></span>
+                <div>
+                  <h3>PHP</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <span><i class="icon ri-checkbox-circle-line"></i></span>
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span>
+        <i
+          class="arrow icon ri-arrow-down-double-line"
+          onclick="location.href='#projects'"
+        ></i>
+      </span>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Veja Meus Últimos</p>
+      <h2 class="title">Projetos</h2>
+      <div class="container">
+        <div class="carousel-view">
+          <button id="prev-btn" class="prev-btn">
+            <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+              <path
+                d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+              />
+            </svg>
+          </button>
+          <div id="item-list" class="item-list">
+            <div id="item" class="item details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project1.png"
+                  alt="Projeto 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">KimetsuBlog</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/G3rsonBR/PROA-LandingPage-KimetsuBlog', '_blank')"
+                >
+                  GitHub
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://g3rsonbr.github.io/PROA-LandingPage-KimetsuBlog/', '_blank')"
+                >
+                  Rodar Projeto
+                </button>
+              </div>
+            </div>
+            <div id="item" class="item details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project2.png"
+                  alt="Projeto 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">TLOU Blog</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/G3rsonBR/PROA-LandingPage-TLOU', '_blank')"
+                >
+                  GitHub
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://g3rsonbr.github.io/PROA-LandingPage-TLOU/', '_blank')"
+                >
+                  Rodar Projeto
+                </button>
+              </div>
+            </div>
+            <div id="item" class="item details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project3.png"
+                  alt="Projeto 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">
+                ResiPersonalizados
+              </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/G3rsonBR/PROA-LandingPage-ResiPersonalizados', '_blank')"
+                >
+                  GitHub
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://g3rsonbr.github.io/PROA-LandingPage-ResiPersonalizados/', '_blank')"
+                >
+                  Rodar Projeto
+                </button>
+              </div>
+            </div>
+          </div>
+          <button id="next-btn" class="next-btn">
+            <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+              <path
+                d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <span>
+        <i
+          class="arrow icon ri-arrow-down-double-line"
+          onclick="location.href='#contact'"
+        ></i>
+      </span>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Saiba Como Me</p>
+      <h2 class="title">Contatar</h2>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <span><i class="ri-mail-send-line icon"></i></span>
+          <p>
+            <a href="mailto:gersons.br13@gmail.com" target="_blank"
+              >gersons.br13@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <span><i class="ri-linkedin-box-fill icon"></i></span>
+          <p>
+            <a href="https://www.linkedin.com/in/br-gerson/" target="_blank"
+              >Gerson Silva</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
